@@ -1,4 +1,4 @@
-package com.example.texture_rgba_renderer
+package com.plugin.texture_rgba_renderer
 
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel

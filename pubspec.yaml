@@ -1,6 +1,6 @@
 name: texture_rgba_renderer
 description: A texture helper which brings a high level api to handle BGRA data.
-version: 0.1.0
+version: 0.1.1
 homepage: https://github.com/Reticulate-Labs/flutter_texture_rgba_renderer
 publish_to: https://onepub.dev/api/kuubxpsdav/
 
@@ -16,7 +16,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^5.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -42,7 +42,7 @@ flutter:
       windows:
         pluginClass: TextureRgbaRendererPluginCApi
       android:
-        package: com.example.texture_rgba_renderer
+        package: com.plugin.texture_rgba_renderer
         pluginClass: TextureRgbaRendererPlugin
       ios:
         pluginClass: TextureRgbaRendererPlugin
