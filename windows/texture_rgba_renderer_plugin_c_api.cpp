@@ -25,6 +25,5 @@ void FlutterRgbaRendererPluginOnRgba(void *texture_rgba, const uint8_t *buffer, 
     }
     
     TextureRgba *rgba = static_cast<TextureRgba *>(texture_rgba);
-    std::vector<uint8_t> data(buffer, buffer + len);
-    rgba->MarkVideoFrameAvailable(data, width, height);
+    rgba->MarkVideoFrameAvailable2(buffer, len, width, height);
 }

@@ -13,12 +13,11 @@ public:
 
 	void MarkVideoFrameAvailable(std::vector<uint8_t>& buffer, size_t width, size_t height);
 
+	void MarkVideoFrameAvailable2(const uint8_t* buffer, size_t buffer_length, size_t width, size_t height);
+
 	int64_t texture_id() const { return texture_id_; };
 
 	const FlutterDesktopPixelBuffer* buffer();
-
-private:
-	void switch_rgba(std::vector<uint8_t>& buffer, size_t height);
 
 private:
 	FlutterDesktopPixelBuffer flutter_pixel_buffer_{};
