@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - texture_rgba_renderer (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - texture_rgba_renderer (from `.symlinks/plugins/texture_rgba_renderer/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  texture_rgba_renderer:
+    :path: ".symlinks/plugins/texture_rgba_renderer/ios"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  texture_rgba_renderer: cf326e39570eff073e0a28369294c447d3649336
+
+PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
+
+COCOAPODS: 1.16.2

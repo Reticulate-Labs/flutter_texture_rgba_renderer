@@ -40,6 +40,11 @@ flutter:
         pluginClass: TextureRgbaRendererPlugin
       windows:
         pluginClass: TextureRgbaRendererPluginCApi
+      android:
+        package: com.example.texture_rgba_renderer
+        pluginClass: TextureRgbaRendererPlugin
+      ios:
+        pluginClass: TextureRgbaRendererPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
