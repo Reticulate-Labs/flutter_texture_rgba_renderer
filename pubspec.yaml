@@ -5,7 +5,7 @@ homepage: https://github.com/Reticulate-Labs/flutter_texture_rgba_renderer
 publish_to: https://onepub.dev/api/kuubxpsdav/
 
 environment:
-  sdk: '>=2.12.0 <4.0.0'
+  sdk: '>=2.17.0 <4.0.0'
   flutter: '>=3.22.0'
 
 dependencies:
