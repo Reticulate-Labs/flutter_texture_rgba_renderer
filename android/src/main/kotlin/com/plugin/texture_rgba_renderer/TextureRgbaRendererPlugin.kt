@@ -1,4 +1,4 @@
-package com.plugin.flutter_texture_rgba_renderer
+package com.plugin.texture_rgba_renderer
 
 import android.content.Context
 import io.flutter.embedding.engine.plugins.FlutterPlugin
@@ -87,7 +87,9 @@ class TextureRgbaRendererPlugin : FlutterPlugin, MethodChannel.MethodCallHandler
 
   override fun onDetachedFromEngine(binding: FlutterPlugin.FlutterPluginBinding) {
     channel.setMethodCallHandler(null)
-    renderers.values.forEach { it.dispose() }
+    renderers.values.forEach { renderer ->
+      renderer.dispose()
+    }
     renderers.clear()
   }
 }

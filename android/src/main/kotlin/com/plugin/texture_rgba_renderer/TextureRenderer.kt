@@ -1,4 +1,4 @@
-package com.example.flutter_texture_rgba_renderer
+package com.plugin.texture_rgba_renderer
 
 import android.graphics.Bitmap
 import android.graphics.Canvas
@@ -21,20 +21,17 @@ class TextureRenderer(private val textureRegistry: TextureRegistry) {
     }
 
     fun updateFrame(data: ByteArray, width: Int, height: Int, stride: Int) {
-        // Resize surface and bitmap if dimensions change
         if (currentWidth != width || currentHeight != height) {
             surfaceProducer.setSize(width, height)
-            bitmap?.recycle() // Clean up old bitmap
+            bitmap?.recycle()
             bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)
             currentWidth = width
             currentHeight = height
         }
 
-        // Convert BGRA data to ARGB for Android Bitmap
         val bitmapData = convertBgraToArgb(data, width, height, stride)
         bitmap?.setPixels(bitmapData, 0, width, 0, 0, width, height)
 
-        // Draw to the surface
         val canvas = surface.lockCanvas(null)
         try {
             canvas.drawBitmap(bitmap!!, 0f, 0f, null)
