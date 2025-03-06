@@ -1,4 +1,4 @@
-package com.example.texture_rgba_renderer
+package com.plugin.texture_rgba_renderer
 
 import androidx.annotation.NonNull
 

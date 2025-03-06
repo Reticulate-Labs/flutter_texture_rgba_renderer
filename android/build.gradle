@@ -1,4 +1,4 @@
-group 'com.example.texture_rgba_renderer'
+group 'com.plugin.texture_rgba_renderer'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -26,6 +26,7 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 31
+    namespace 'com.plugin.texture_rgba_renderer'
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
